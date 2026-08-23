@@ -1,3 +1,7 @@
+/* Import fonts here from google fonts and configure fintFamily in the "tailwind.config.ts" to use localy */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
