@@ -5,10 +5,6 @@ module.exports = {
     ],
     theme: {
       extend: {
-        // Configure a fantFamily here to use localy.
-        fontFamily: {
-          paci: ["Pacifico"]
-        }
       },
     },
     plugins: [
