@@ -3,8 +3,22 @@
 
 @theme {
     --color-mint-500: #46bba5;
+    --color-primary: #b83975;
+    --color-secondary-100: #abdc83;
+    --color-secondary-400: #abdcc8;
+    --color-secondary-600: #8e994e;
+    --color-secondary-800: #5f6634;
+    --color-secondary-900: #2f331a;
+    --color-secondary-950: #181a0d;
+    --text-10xl: 10rem;
+}
+
+:root {
+    --bigger-text: 2.5rem;
 }
 
 .mint {
-    /* background-color: var(--color-red-500); */
-    background-color: theme("colors.red.500");
+    background-color: var(--color-mint-500);
+    color: var(--color-green-100);
+    font-size: var(--bigger-text);
+}
