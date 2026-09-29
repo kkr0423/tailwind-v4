@@ -2,29 +2,15 @@
 
 @import "tailwindcss";
 
-@layer components {
-  .btn {
-    @apply font-semibold px-7 py-2 rounded-lg m-1 shadow-xl hover:-translate-y-1 duration-500;
-  }
-
-  .btn-primary {
-    @apply bg-blue-500 text-white hover:text-blue-100;
-  }
-  .btn-secondary {
-    @apply bg-orange-700 text-white hover:text-orange-100;
-  }
-
-  .card {
-    @apply p-7 rounded-xl border border-gray-200 m-2 shadow-lg bg-white;
-  }
+@theme {
+  --color-redish-100: oklch(0.69 0.05 30);
+  --color-redish-200: oklch(0.69 0.1 30);
+  --color-redish-300: oklch(0.69 0.15 30);
+  --color-redish-400: oklch(0.69 0.2 30);
+  --color-redish-500: oklch(0.69 0.25 30);
 }
 
-@layer base {
-  h2 {
-    /* @apply text-2xl font-bold mb-2 text-red-950; */
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: var(--color-red-950);
-  }
+@utility text-inverter {
+  background-color: black;
+  color: white;
 }
