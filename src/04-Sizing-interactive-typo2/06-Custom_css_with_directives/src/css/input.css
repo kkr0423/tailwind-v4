@@ -14,3 +14,7 @@
   background-color: black;
   color: white;
 }
+
+@utility red-fade-* {
+  background-color: --value(--color-redish-*);
+}
