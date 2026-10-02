@@ -8,6 +8,15 @@
   --color-redish-300: oklch(0.69 0.15 30);
   --color-redish-400: oklch(0.69 0.2 30);
   --color-redish-500: oklch(0.69 0.25 30);
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 56px;
+  --spacing-5xl: 64px;
 }
 
 @utility text-inverter {
@@ -17,4 +26,12 @@
 
 @utility red-fade-* {
   background-color: --value(--color-redish-*);
+}
+
+@utility fs-* {
+  /* font-size: --value(--spacing-*); */
+  /* font-size: --value(integer) px; */
+  /* font-size: calc(--value(integer) * 0.25rem); */
+  /* font-size: --value([length]); */
+  font-size: --value(--spacing-*, [length]);
 }

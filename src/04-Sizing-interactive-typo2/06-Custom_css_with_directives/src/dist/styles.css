@@ -17,6 +17,7 @@
     --color-redish-300: oklch(0.69 0.15 30);
     --color-redish-400: oklch(0.69 0.2 30);
     --color-redish-500: oklch(0.69 0.25 30);
+    --spacing-lg: 24px;
   }
 }
 @layer base {
@@ -198,6 +199,12 @@
   }
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
+  }
+  .fs-\[40px\] {
+    font-size: 40px;
+  }
+  .fs-lg {
+    font-size: var(--spacing-lg);
   }
   @media (hover: hover) {
     .hover\:text-inverter:hover {
